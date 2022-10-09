@@ -71,10 +71,26 @@ class Profile(models.Model):
         ),
     )
 
+    @property
+    def full_name(self):
+        return f'{self.first_name} {self.last_name}'
+
 
 class Expense(models.Model):
-    title = models.CharField()
+    TITLE_MAX_LEN = 30
+
+    title = models.CharField(
+        max_length=TITLE_MAX_LEN,
+    )
+
     expense_image = models.URLField()
-    description = models.TextField()
+
     price = models.FloatField()
+
+    description = models.TextField(
+        null=True,
+        blank=True,
+    )
+
+
 

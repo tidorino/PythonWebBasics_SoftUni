@@ -6,14 +6,14 @@
     <div class="expenses-container">
         <div class="expense-container">
             <!-- Full Name -->
-            <h2>Aleksandra Raykova</h2>
+            <h2>{{ profile.full_name}}</h2>
             <!-- Profile Image -->
             <img src="{% static 'images/user.png' %}" alt="profile pic">
             <!-- Profile Description -->
             <!-- Total Items Bought -->
-            <p>Total Items Bought: 2</p>
+            <p>Total Items Bought: {{ expenses_count }}</p>
             <!-- Budget Left -->
-            <p>Budget Left: 100.00$</p>
+            <p>Budget Left: {{ budget_left }}$</p>
             <div class="right">
                 <!-- Edit Profile Button -->
                 <a class="button edit" href="{% url 'edit profile' %}">Edit Profile</a>

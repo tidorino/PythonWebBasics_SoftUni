@@ -1,7 +1,14 @@
 from django.shortcuts import render, redirect
 
+from expenses_tracker.web.forms import CreateProfileForm, EditProfileForm
+from expenses_tracker.web.models import Profile, Expense
+
 
 def get_profile():
+    profiles = Profile.objects.all()
+    if profiles:
+        return profiles[0]
+
     return None
 
 
@@ -13,7 +20,20 @@ def show_index(request):
 
 
 def create_profile(request):
-    return render(request, 'home-no-profile.html')
+    if request.method == 'POST':
+        form = CreateProfileForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('show index')
+    else:
+        form = CreateProfileForm()
+
+    contex = {
+        'form': form,
+        'no_profile': True,
+    }
+
+    return render(request, 'home-no-profile.html', contex)
 
 
 def create_expense(request):
@@ -29,7 +49,17 @@ def edit_expense(request, pk):
 
 
 def show_profile(request):
-    return render(request, 'profile.html')
+    profile = get_profile()
+    expenses = Expense.objects.all()
+    budget_left = profile.budget - sum(e.price for e in expenses)
+    expenses_count = len(expenses)
+
+    context = {
+        'profile': profile,
+        'expenses_count': expenses_count,
+        'budget_left': budget_left,
+    }
+    return render(request, 'profile.html', context)
 
 
 def delete_profile(request):
@@ -37,5 +67,17 @@ def delete_profile(request):
 
 
 def edit_profile(request):
-    return render(request, 'profile-edit.html')
+    profile = get_profile()
+    if request.method == 'POST':
+        form = EditProfileForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid():
+            form.save()
+            return redirect('show index')
+    else:
+        form = EditProfileForm(instance=profile)
+
+    contex = {
+        'form': form,
+    }
+    return render(request, 'profile-edit.html', contex)
 
