@@ -1,11 +1,18 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
-def index(request):
+def get_profile():
+    return None
+
+
+def show_index(request):
+    profile = get_profile()
+    if not profile:
+        return redirect('create profile')
     return render(request, 'home-with-profile.html')
 
 
-def index_no_profile(request):
+def create_profile(request):
     return render(request, 'home-no-profile.html')
 
 
@@ -21,14 +28,14 @@ def edit_expense(request, pk):
     return render(request, 'expense-edit.html')
 
 
-def profile_page(request):
+def show_profile(request):
     return render(request, 'profile.html')
 
 
-def delete_profile_page(request):
+def delete_profile(request):
     return render(request, 'profile-delete.html')
 
 
-def edit_profile_page(request):
+def edit_profile(request):
     return render(request, 'profile-edit.html')
 
