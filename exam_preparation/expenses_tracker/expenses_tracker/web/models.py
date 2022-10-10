@@ -25,7 +25,7 @@ class MaxFileSizeInMbValidator:
         return f'Max file size is {self.max_size:.2f} MB'
 
     @staticmethod
-    def __megabytes_to_bytes(self, value):
+    def __megabytes_to_bytes(value):
         return value * 1024 * 1024
 
 

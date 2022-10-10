@@ -7,13 +7,14 @@
         <div class="expense-container">
             <!-- Full Name -->
             <h2>{{ profile.full_name}}</h2>
-            <!-- Profile Image -->
-            <img src="{% static 'images/user.png' %}" alt="profile pic">
-            <!-- Profile Description -->
-            <!-- Total Items Bought -->
+            {% if profile.image %}
+                <img src="{{profile.image.url}}" alt="profile pic">
+            {% else %}
+                <img src="{% static 'images/user.png' %}" alt="profile pic">
+            {% endif %}
             <p>Total Items Bought: {{ expenses_count }}</p>
             <!-- Budget Left -->
-            <p>Budget Left: {{ budget_left }}$</p>
+            <p>Budget Left: {{ budget_left|floatformat:2 }}$</p>
             <div class="right">
                 <!-- Edit Profile Button -->
                 <a class="button edit" href="{% url 'edit profile' %}">Edit Profile</a>
