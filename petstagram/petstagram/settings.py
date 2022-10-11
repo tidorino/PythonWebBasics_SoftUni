@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-77p@l3$(=m5(fpw!ax#a^q=b2xjesu_2b5&n&i-&7d%&v)4kf-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -77,16 +80,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'petstagram.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'petstagram_db',
+        'USER': 'postgres',
+        'PASSWORD': 'tidorino',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
