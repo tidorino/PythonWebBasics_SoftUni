@@ -20,7 +20,7 @@ class Pet(models.Model):
     slug = models.SlugField(
         unique=True,
         null=False,
-        blank=False,
+        blank=True,
     )
 
     date_of_birth = models.DateField(
