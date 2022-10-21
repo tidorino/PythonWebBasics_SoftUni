@@ -1,7 +1,9 @@
+from django.core.exceptions import ValidationError
 from django.core.validators import MinLengthValidator
 from django.db import models
 
 from petstagram.pets.models import Pet
+from petstagram.photos.validators import validate_max_image_size
 
 
 class Photo(models.Model):
@@ -11,6 +13,10 @@ class Photo(models.Model):
     LOCATION_MAX_LEN = 30
 
     photo = models.ImageField(
+        upload_to='mediafiles/pet_photos/',
+        validators=(
+            validate_max_image_size,
+        ),
         null=False,
         blank=True,
     )
@@ -40,3 +46,6 @@ class Photo(models.Model):
         Pet,
         blank=True,
     )
+
+    def __str__(self):
+        return f'Id:{self.id}- Photo:{self.photo}'
