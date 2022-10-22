@@ -1,15 +1,20 @@
 from django.shortcuts import render, redirect
 
+from petstagram.core.photo_likes import apply_likes_count, apply_user_liked_photo
 from petstagram.pets.forms import PetForm, PetEditForm
 from petstagram.pets.models import Pet
 
 
 def pet_details(request, username, pet_slug):
-    pet = Pet.objects.get(slug=pet_slug)
-    photos = pet.photo_set.all()
+    pet = Pet.objects.filter(slug=pet_slug).get()
+    photos_count = pet.photo_set.count()
+    photos = [apply_likes_count(photo) for photo in pet.photo_set.all()]
+    photos = [apply_user_liked_photo(photo) for photo in photos]
+
     context = {
         'pet': pet,
-        'photos': photos,
+        'photos_count': photos_count,
+        'pet_photos': photos,
     }
     return render(request, 'pets/pet-details-page.html', context=context)
 

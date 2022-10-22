@@ -25,6 +25,9 @@ class PhotoComment(models.Model):
         blank=True,
     )
 
+    class Meta:
+        ordering = ['publication_date_and_time']
+
 
 class PhotoLike(models.Model):
     photo = models.ForeignKey(
