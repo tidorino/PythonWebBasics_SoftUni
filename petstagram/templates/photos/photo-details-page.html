@@ -47,7 +47,7 @@
                                 </a>
 
                                 <!-- Link to Delete Pet Photo Page -->
-                                <a href="#">
+                                <a href="{% url 'delete photo' pk=photo.pk %}">
                                     <img class="bin-img" src="{% static 'images/icon-remove-22.jpg' %}"
                                          alt="bin button">
                                 </a>
@@ -190,15 +190,11 @@
                     </div>
 
                     <!-- Start Add Comments Form -->
-                    <form method="post" action="#">
-                        <label for="id_body">Body:</label>
-                        <textarea name="body" cols="40" rows="10" placeholder="Add comment..." maxlength="300"
-                                  required="" id="id_body"></textarea>
-                        <!-- Post Comments Button -->
+                    <form method="post" action="{% url 'comment photo' photo_id=photo.pk %}">
+                        {{ comment_form }}
                         <button type="submit">Post</button>
+                        {% csrf_token %}
                     </form>
-                    <!-- End Add Comments Form -->
-
                 </div>
                 <!-- End Add Comments Section -->
 
