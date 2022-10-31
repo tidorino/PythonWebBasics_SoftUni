@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94373979-58c5-4812-a24f-628ccc0f8ac9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_collection_app/web/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car-delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile-delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/.idea/my_new_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_app/my_app/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_preparation/my_music_app/my_music_app/web/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_preparation/my_music_app/my_music_app/web/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../forms_demo/forms_demo/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../forms_demo/forms_demo/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../forms_demo/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../forms_demo/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../models_demo/models_demo/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../models_demo/models_demo/web/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GqR4H9mZYIIZ8WhHlo2FV6Is1A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/PythonWebBasics_softuni/exam_preparation/my_music_app"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\PythonWebBasics_softuni\exam\car_collection_app\templates\templates1" />
+      <recent name="C:\Users\user\PycharmProjects\PythonWebBasics_softuni\exam\car_collection_app\staticfiles" />
+      <recent name="C:\Users\user\PycharmProjects\PythonWebBasics_softuni\exam\car_collection_app\templates" />
+      <recent name="C:\Users\user\PycharmProjects\PythonWebBasics_softuni\exam\car_collection_app\car_collection_app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="car_collection_app" type="Python.DjangoServer" factoryName="Django server">
+      <module name="car_collection_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="car_collection_app.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94373979-58c5-4812-a24f-628ccc0f8ac9" name="Changes" comment="" />
+      <created>1667113934992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667113934992</updated>
+      <workItem from="1667113937687" duration="2314000" />
+      <workItem from="1667116905366" duration="11951000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/car_collection_app/web/views.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
