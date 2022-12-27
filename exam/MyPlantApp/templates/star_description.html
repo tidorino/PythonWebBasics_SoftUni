@@ -1,0 +1,17 @@
+{% load static %}
+
+{% if total_plant == 1 %}
+    <p class="description">Total stars:</p>
+    <img class="star-img" src="{% static 'images/star3.png' %}" alt='profile-image'/>
+{% elif total_plant == 2 %}
+    <p class="description">Total stars:</p>
+    <img class="star-img" src="{% static 'images/star3.png' %}" alt='profile-image'/>
+    <img class="star-img" src="{% static 'images/star3.png' %}" alt='profile-image'/>
+{% elif total_plant >= 3 %}
+    <p class="description">Total stars:</p>
+    <img class="star-img" src="{% static 'images/star3.png' %}" alt='profile-image'/>
+    <img class="star-img" src="{% static 'images/star3.png' %}" alt='profile-image'/>
+    <img class="star-img" src="{% static 'images/star3.png' %}" alt='profile-image'/>
+{% else %}
+    <p class="description">Total stars: {{ total_plant }}</p>
+{% endif %}
