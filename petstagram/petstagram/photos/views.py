@@ -21,7 +21,7 @@ def add_photo(request):
     return render(request, 'photos/photo-add-page.html', context)
 
 
-def photo_details(request, pk):
+def details_photo(request, pk):
     photo = Photo.objects.filter(pk=pk).get()
     likes = photo.photolike_set.all()
     comments = photo.photocomment_set.all()
