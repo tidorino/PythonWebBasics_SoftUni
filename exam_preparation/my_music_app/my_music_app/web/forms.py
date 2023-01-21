@@ -76,19 +76,9 @@ class EditAlbumForm(forms.ModelForm):
 
 
 class DeleteAlbumForm(forms.ModelForm):
-    def __int__(self, *args, ** kwargs):
-        super().__init__(*args, **kwargs)
-        self.__set_disabled_fields()
-
-    def save(self, commit=True):
-        if commit:
-            self.instance.delete()
-        return self.instance
-
-    def __set_disabled_fields(self):
-        for _, field in self.fields.items():
-            field.widget.attrs['readonly'] = 'readonly'
-            # field.required = False
+    # def __int__(self, *args, ** kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     self.__set_disabled_fields()
 
     class Meta:
         model = Album
@@ -100,6 +90,30 @@ class DeleteAlbumForm(forms.ModelForm):
             'image_url': 'Image URL',
             'price': 'Price',
         }
+    disabled_fields = ['album_name', 'artist', 'genre', 'description', 'image_url', 'price']
+
+    def __init__(self, *args, **kwargs):
+        super(DeleteAlbumForm, self).__init__(*args, **kwargs)
+        instance = getattr(self, 'instance', None)
+        if instance and instance.pk:
+            for field in self.disabled_fields:
+                self.fields[field].disabled = True
+
+    def save(self, commit=True):
+        if commit:
+            self.instance.delete()
+        return self.instance
+
+    # def __set_disabled_fields(self):
+    #     for _, field in self.fields.items():
+    #         field.widget.attrs['readonly'] = 'readonly'
+    #         # field.required = False
+
+
+        # widgets = {'album_name': forms.TextInput(attrs={'readonly': 'readonly'}),
+        #            'artist': forms.TextInput(attrs={'readonly': 'readonly'}),
+        #            'image_url': forms.URLInput(attrs={'readonly': 'readonly'}),
+        #            'price': forms.NumberInput(attrs={'readonly': 'readonly'}), }
 
 
 class ProfileDeleteForm(forms.ModelForm):
