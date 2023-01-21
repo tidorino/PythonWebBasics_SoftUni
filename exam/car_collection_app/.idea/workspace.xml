@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94373979-58c5-4812-a24f-628ccc0f8ac9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_collection_app/web/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/car-create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/car-delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/car-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/car-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/catalogue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile-create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile-delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/.idea/my_new_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/web/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_app/my_app/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_app/my_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../my_app/my_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_app/my_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../my_app/my_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_app/my_app/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../my_app/my_app/web/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../exam_preparation/my_music_app/my_music_app/web/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_preparation/my_music_app/my_music_app/web/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../forms_demo/forms_demo/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../forms_demo/forms_demo/web/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../forms_demo/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../forms_demo/templates/index.html" afterDir="false" />
@@ -120,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667113934992</updated>
       <workItem from="1667113937687" duration="2314000" />
-      <workItem from="1667116905366" duration="11951000" />
+      <workItem from="1667116905366" duration="12586000" />
     </task>
     <servers />
   </component>
